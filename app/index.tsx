@@ -1,3 +1,6 @@
+import { FooterNextButton } from "@/components/FooterNextButton";
+import { GradientBackground } from "@/components/GradientBackground";
+import { Header } from "@/components/Header";
 import React, { useEffect, useState } from "react";
 import { StyleSheet, TextInput, View } from "react-native";
 import {
@@ -34,6 +37,8 @@ export default function Index() {
 
   return (
     <View style={[styles.container]}>
+      <GradientBackground />
+      <Header />
       <View style={[styles.row, { alignItems: "flex-end" }]}>
         {Interests.slice(0, 3).map((interest) => (
           <Box key={interest.id} interest={interest} />
@@ -65,6 +70,7 @@ export default function Index() {
           setExtraBoxText={setExtraBoxText}
         />
       )}
+      <FooterNextButton />
     </View>
   );
 }

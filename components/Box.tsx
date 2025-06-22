@@ -54,7 +54,7 @@ export const Box = ({ interest }: { interest: InterestType }) => {
         [theme.colors.text, interest.color]
       ),
     };
-  }, [interest.color]);
+  }, []);
 
   const animatedTextContainerStyle = useAnimatedStyle(() => {
     return {

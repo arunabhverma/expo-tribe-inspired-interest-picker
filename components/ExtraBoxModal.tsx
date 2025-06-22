@@ -125,8 +125,13 @@ export const ExtraBoxModal = ({
         </Animated.Text>
         <AnimatedTextInput
           ref={inputRef}
+          cursorColor={theme.colors.notification}
+          selectionHandleColor={theme.colors.notification}
+          selectionColor={theme.colors.notification}
+          placeholderTextColor={theme.colors.text}
           returnKeyType="done"
           onSubmitEditing={onSubmitEditing}
+          placeholder="Books, Music, Food, etc."
           style={[
             styles.textInputStyle,
             ,
